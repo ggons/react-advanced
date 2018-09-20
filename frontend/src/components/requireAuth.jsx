@@ -24,7 +24,7 @@ const requireAuth = (ChildComponent) => {
 
   return connect(
     state => ({
-      auth: state.auth.isLoggedIn
+      auth: state.auth
     })
   )(ComposeComponent);
 }

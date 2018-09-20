@@ -30,7 +30,7 @@ class App extends Component {
  
 export default connect(
   state => ({
-    auth: state.auth.isLoggedIn
+    auth: state.auth
   }),
   actions
 )(App);

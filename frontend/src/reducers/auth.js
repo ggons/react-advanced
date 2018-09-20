@@ -1,13 +1,11 @@
 import { CHANGE_AUTH } from 'actions/types';
 
-const initialState = {
-  isLoggedIn: false
-}
+const initialState = false;
 
 export default function (state = initialState, action) {
   switch (action.type) {
     case CHANGE_AUTH:
-      return Object.assign({}, state, { isLoggedIn: action.payload })
+      return action.payload;
     default:
       return state;
   }
